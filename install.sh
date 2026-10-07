@@ -14,7 +14,7 @@ fi
 REPO_URL="https://github.com/gian-g3dai/dotfiles.git"
 DOTFILES="$HOME/dotfiles"
 GIT_NAME="gian-g3dai"
-GIT_EMAIL="gianluigidalessandro23@gmail.com"
+GIT_EMAIL="125449997+gian-g3dai@users.noreply.github.com"
 
 log()  { printf '\n\033[1;34m==> %s\033[0m\n' "$*"; }
 ok()   { printf '\033[1;32m    %s\033[0m\n' "$*"; }
