@@ -1,0 +1,26 @@
+# Shared git config. Identity lives in ~/.gitconfig.local (written by install.sh)
+# so this file can stay public and machine-independent.
+[include]
+	path = ~/.gitconfig.local
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[push]
+	autoSetupRemote = true
+	default = current
+[fetch]
+	prune = true
+[core]
+	editor = vim
+	autocrlf = input
+[color]
+	ui = auto
+[alias]
+	st = status -sb
+	co = checkout
+	br = branch
+	ci = commit
+	lg = log --oneline --graph --decorate -20
+	last = log -1 HEAD --stat
+	unstage = reset HEAD --
