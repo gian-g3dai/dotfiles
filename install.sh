@@ -103,7 +103,6 @@ link() {
 log "Linking configs"
 link "$DOTFILES/gitconfig"        "$HOME/.gitconfig"
 link "$DOTFILES/tmux.conf"        "$HOME/.tmux.conf"
-link "$DOTFILES/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
 
 # Claude Code rewrites settings.json itself, so copy once rather than link.
 if [ ! -f "$HOME/.claude/settings.json" ]; then
